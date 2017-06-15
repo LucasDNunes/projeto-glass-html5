@@ -1,0 +1,217 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@font-face{
+	font-family:'FonteLogo' ;
+	src:url("../_fonts/bubblegum-sans-regular.otf");
+}
+/* formatação interface */	
+	body{
+		font-family: Arial, sans-serif;
+		background-color: #dddddd;
+		color: rgba(0,0,0,1); 
+	}
+
+	a{
+		text-decoration: none;
+		color: #606060;
+	}
+	a:hover{
+		text-decoration: underline;
+	}
+
+	div#interface{
+		width: 95%;
+		background-color:white;
+		margin: -15px auto 0px auto; /* cima, direita, baixo, esquerda */
+		box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+		padding: 4px 10px 10px 10px;
+	}
+
+	p{
+		text-align: justify;
+		text-indent: 50px;
+	}
+/* formatação cabeçalho */
+header#cabecalho img#icone{
+	position: absolute;
+	left: 82%;
+	top: 10%;
+}
+header#cabecalho{
+	border-bottom: 1px #606060 solid;
+	height: 150px;
+	background: url("../_imagens/glass-logo-peq.jpg")no-repeat 0px 80%;
+}
+header#cabecalho h1{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 30pt;
+	color: #606060;
+	text-shadow:1px 1px 1px rgba(0,0,0,.6);
+	padding: 0;
+	margin-bottom: 0px;
+}
+header#cabecalho h2{
+	font-family: 'Titillium Web', sans-serif;
+	color:#888888;
+	font-size: 13pt
+	padding:0;
+	margin-top:0; 
+}
+
+/*formatação foto com legenda*/
+figure.foto-legenda{
+	position: relative;
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img{
+	width: 100%;
+	height: 100%;
+} 
+
+figure.foto-legenda figcaption{
+	opacity: 0;	
+	position: absolute;
+	top:0%;
+	background-color: rgba(0,0,0,.4);
+	width: 100%;
+	height: 99%;
+	padding: 10%;
+	color: white;
+	box-sizing: border-box;
+	transition: opacity 0.5s;	
+}
+
+figure.foto-legenda:hover figcaption{
+	opacity: 1;
+}
+
+/*formatação menu*/
+nav#menu{
+	display: block;
+}
+nav#menu ul{
+	list-style: none;	
+	text-transform: uppercase;
+	position: absolute;
+		top: -2%;
+		left: 50%;
+}
+nav#menu li{
+	display:inline-block; /* bota os li na mesma linha */
+	background-color: #dddddd;
+	padding: 10px; /* distancia dos elementos de dento */
+	margin: 2px;  /* distancia dos elementos ao redor */
+	transition: background-color 1s;
+}
+nav#menu li:hover{
+	background-color: #606060;
+}
+nav#menu h1{
+	display: none;
+}
+nav#menu a{
+	color: #000000;
+	text-decoration: none;
+}
+nav#menu a:hover{
+	color: #ffffff;
+	text-decoration: underline;
+}
+/*corpo do site*/
+section#corpo {
+	display: block;
+	width: 680px;
+	float: left;
+	border-right: 1px solid #606060; /* espessura, tipo e cor */
+	padding-right: 0.8%; 
+	padding-bottom: 0.5%;
+}
+header#cabecalho-artigo h1{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color:#606060;
+	margin-bottom: 0px;
+}
+header#cabecalho-artigo h2{
+	font-size: 13pt;
+	color:#cecece;
+	background-color:#ffffff;
+	margin: 0px;
+}
+header#cabecalho-artigo h3{
+	font-size: 11pt;
+	color:#606060;
+}
+.direita{
+	text-align:right;
+}
+article#noticia-principal h2{
+	font-size: 13pt;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}
+table#tabela {
+	border: 1px solid #606060;
+	border-spacing:0;
+	margin-left: auto;
+	margin-right: auto;
+}
+table#tabela td{
+	border: 1px solid #606060;
+	padding: 10px;
+}
+table td.ce {
+	text-align: right;
+	color: #ffffff;
+	background-color: #666666;
+	font-weight: bold; 
+}
+table td.cd {
+	text-align: left;
+	background-color: #cecece;
+}
+table#tabela caption{
+	color:#888888;
+	font-size: 13pt;
+	font-weight:bolder;
+}
+table#tabela caption span{
+	display: block;
+	float: right;
+	color: #000000;
+	font-size:8pt;
+	margin-top: 2.5%;
+}
+/*lateral do site*/
+aside#lateral {
+	display: block;
+	width: 540px;
+	float: right;
+	background-color: #dddddd;
+	padding: 10px;
+	margin-top: 10px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5); /* lateral, vertical, espalhamento e cor(preto com 50% de transparencia)*/
+}
+aside#lateral h1{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+}
+aside#lateral h2{
+	background-color: #606060;
+	font-size: 13pt;
+	color: #ffffff;
+	padding: 5px;
+}
+/*rodapé*/
+footer#rodape{
+	clear: both;
+	border-top: 1px solid #606060;
+}
+footer#rodape p{
+	text-align: center;
+}
